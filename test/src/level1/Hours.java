@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package level1;
 
-/**
- *
- * @author sayma
- */
+
 public class Hours {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        System.out.println("ahlan w sahlan marhaba");
+        int seconds = 20000;//5 33 20..5*60*60 + 33*60 +20
+        int minutes = seconds /60;//333.333
+        int hours = minutes / 60; //5.555
+        int minInHours = hours * 60; 
+        minutes = minutes - minInHours; 
+        int secInHours = hours * 60 * 60 + minutes * 60;
+        seconds = seconds - secInHours;
+        System.out.println(hours + ":" + minutes + ":" + seconds);
+        
     }
     
 }
