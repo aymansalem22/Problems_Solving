@@ -13,6 +13,7 @@ public class EncodeString {
      */
     public static void main(String[] args) {
        Scanner sc=new Scanner(System.in);
+        System.out.println("enter word to encode it");
        String s=sc.next();
        String encryptedStr="";
        char a=s.charAt(0);
